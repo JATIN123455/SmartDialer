@@ -1,1 +1,43 @@
+flowchart TD
 
+    Campaign
+        --> Pacing
+
+    Pacing
+        --> Progressive
+
+    Pacing
+        --> Predictive
+
+    Progressive
+        --> Safety
+
+    Predictive
+        --> Safety
+
+    Safety
+        --> Allocator
+
+    Allocator
+        --> AgentReservation
+
+    Allocator
+        --> BorrowerReservation
+
+    AgentReservation
+        --> Database
+
+    BorrowerReservation
+        --> Database
+
+    Allocator
+        --> Provider
+
+    Provider
+        --> EventHandler
+
+    EventHandler
+        --> Database
+
+    Recovery
+        --> Database
